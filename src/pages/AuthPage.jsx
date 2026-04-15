@@ -33,7 +33,9 @@ const AuthPage = () => {
         setIsLogin(true); // ✅ After signup → go to login
       }
     } catch (err) {
-      setError("Something went wrong. Please try again.");
+      // ✅ Show actual error from backend
+      const errorMessage = err.response?.data?.msg || err.response?.data?.error || err.message || "Something went wrong. Please try again.";
+      setError(errorMessage);
       console.error(err);
     } finally {
       setLoading(false);
