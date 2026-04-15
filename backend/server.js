@@ -54,7 +54,6 @@ const corsOptions = {
 console.log("Allowed CORS origins:", allowedOrigins);
 
 app.use(cors(corsOptions));
-app.options("/*", cors(corsOptions));
 
 // JSON parser
 app.use(express.json());
