@@ -27,7 +27,16 @@ const app = express();
 ========================= */
 
 // Enable CORS (frontend connection) - Dynamic for production
-const allowedOrigins = (process.env.ALLOWED_ORIGINS || "http://localhost:5173").split(",").map(origin => origin.trim());
+const defaultAllowedOrigins = [
+  "http://localhost:5173",
+  "https://gantavyaharsh.netlify.app",
+  "https://www.gantavyaharsh.netlify.app",
+];
+
+const allowedOrigins = (process.env.ALLOWED_ORIGINS
+  ? process.env.ALLOWED_ORIGINS.split(",").map(origin => origin.trim())
+  : defaultAllowedOrigins
+).filter(Boolean);
 
 app.use(
   cors({
