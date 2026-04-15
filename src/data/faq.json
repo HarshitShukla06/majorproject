@@ -1,0 +1,28 @@
+// src/data/faq.json
+[
+  {
+    "question": "What services does Gantavia offer?",
+    "answer": "Gantavia offers personalized travel planning, destination suggestions, hotel booking tips, and travel budget management.",
+    "keywords": ["services", "offer", "provide", "features"]
+  },
+  {
+    "question": "How can I plan a trip using Gantavia?",
+    "answer": "You can use our PlanTrip page to select destinations, budget, and duration. Gantavia AI will suggest the best itinerary.",
+    "keywords": ["plan", "trip", "itinerary", "schedule"]
+  },
+  {
+    "question": "Does Gantavia provide hotel recommendations?",
+    "answer": "Yes, Gantavia AI suggests hotels based on your budget and location preferences.",
+    "keywords": ["hotel", "stay", "accommodation", "booking"]
+  },
+  {
+    "question": "Can I ask about adventure trips?",
+    "answer": "Absolutely! You can ask about mountain trekking, river rafting, paragliding, or any adventure activity.",
+    "keywords": ["adventure", "trek", "rafting", "paragliding", "mountain"]
+  },
+  {
+    "question": "Is there a mobile app for Gantavia?",
+    "answer": "Yes, our mobile app allows you to plan trips, track itineraries, and get AI travel suggestions on the go.",
+    "keywords": ["app", "mobile", "android", "ios"]
+  }
+]
